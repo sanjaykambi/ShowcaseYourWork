@@ -1,0 +1,17 @@
+{{>head}}
+<body>
+    {{>header}}
+	<div class="response-container1">
+		{{#each code}}
+			<div class="response1">
+				<h2 class="question_name1">{{this.quename}}</h2>
+				<h3 class="question1">{{this.Question}}</h3>
+				{{#if this.queimage}}
+					<img src="{{this.queimage}}"class="image1">
+				{{/if}}
+				<pre class="code1">{{this.Solution}}</pre>
+			</div>
+		{{/each}}
+	</div>
+</body>
+</html>

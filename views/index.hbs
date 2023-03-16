@@ -1,0 +1,37 @@
+{{>head}}
+<body>
+    <div class="container">
+        {{>header}}
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">Hello</span>
+                <h1>I'm <span class="multiText" id="multitexts">Coder</span></h1>
+                <p>Any fool can write code that a computer can understand. Good programmers write code that humans can understand.</p>
+                <div class="btns">
+                    <a href="/res"><button>ask c++ Questions</button></a>
+                    <!-- <button>hire me</button> -->
+                    <button>download CV</button>
+                </div>
+            </div>
+            <div class="cols cols1">
+                <div class="imgbox">
+                    <!-- <img src="img33.png" id="splash" width="100px" height="500px"> -->
+                    <img src="/statics/image/img_pic.png">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+        var typingEffect = new Typed('#multitexts',{
+            strings: ['coder', 'student','IITian'],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            backDelay : 1500,
+        }) 
+    </script>
+</body>
+</html>
