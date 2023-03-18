@@ -1,6 +1,7 @@
 const mongoose = require("mongoose")
 const db = "mongodb+srv://bishu:8Dr0Cvs4zncTM0Of@cluster0.uul8ovz.mongodb.net/bisu?retryWrites=true&w=majority"
-mongoose.connect(db,{
+const db1 = "mongodb://localhost:27017/bishu"
+mongoose.connect(db1,{
     useNewUrlParser :true,
 }).then(()=>{
     console.log("Connection Successfull")

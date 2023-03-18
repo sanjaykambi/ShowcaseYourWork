@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: 'poppins',sans-serif;
 }
-.container{
+.container1{
     width: 100%;
     min-height: 100vh;
     background-color: #f3f5f8;    
@@ -130,8 +130,6 @@ h1{
     text-transform: capitalize;
 }
 p{
-    display: block;
-    width: 90%;
     font-size: 1.2em;
     color: #3d535f;
 }
@@ -225,6 +223,7 @@ button:hover{
 .question1 {
 	font-size: 18px;
 	margin: 10px 0;
+    white-space: pre-wrap;
 }
 
 .image1 {
@@ -240,3 +239,19 @@ button:hover{
 	white-space: pre-wrap;
 	text-align: left;
 }
+
+
+
+/* ******************* footer **************************/
+footer{
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+}
+
+

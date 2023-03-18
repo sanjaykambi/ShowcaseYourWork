@@ -1,17 +1,31 @@
 {{>head}}
 <body>
-    {{>header}}
-	<div class="response-container1">
-		{{#each code}}
-			<div class="response1">
-				<h2 class="question_name1">{{this.quename}}</h2>
-				<h3 class="question1">{{this.Question}}</h3>
-				{{#if this.queimage}}
-					<img src="{{this.queimage}}"class="image1">
-				{{/if}}
-				<pre class="code1">{{this.Solution}}</pre>
-			</div>
-		{{/each}}
+    
+	{{>header}}
+
+
+	<div class="container mt-5">
+		<div class="row">
+			{{#each code}}
+				<div class="col-md-1"></div>
+				<div class="col-md-10 my-4">
+					<div class="card">
+						<div class="card-body">
+							<div class="question_name1">{{this.quename}}</div>
+							<pre class="question1">{{this.Question}}</pre>
+							{{#if this.queimage}}
+								<img src="{{this.queimage}}"class="image1">
+							{{/if}}
+							<pre class="code1">{{this.Solution}}</pre>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+				{{!-- <hr> --}}
+			{{/each}}
+		</div>
 	</div>
+	{{>footer}}
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
